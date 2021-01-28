@@ -30,7 +30,7 @@ param
 # 
 Function Connect-AzureSubscription() {
     # Ensure the user is logged in
-    try {
+    try {1
         $azureContext = Get-AzureRmContext
     }
     catch {
