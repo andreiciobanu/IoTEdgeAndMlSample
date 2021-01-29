@@ -3,12 +3,12 @@ import json
 import numpy as np
 import pandas as pd
 import azureml.train.automl
-from sklearn.externals import joblib
+import joblib
 from azureml.core.model import Model
 
 def init():
     global model
-    model_path = Model.get_model_path(model_name = 'AutoMLb2904534a8')
+    model_path = Model.get_model_path(model_name = '<<modelname>>')
     # deserialize the model file back into a sklearn model
     model = joblib.load(model_path)
     
